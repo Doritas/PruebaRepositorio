@@ -18,51 +18,51 @@ Imports Npgsql
 
         Public Sub menu()
 
-            Do
+        Do
 
-                Console.Write("Por favor elija seleccione la operacion a realizar:")
-                Console.WriteLine("")
-                Console.WriteLine("1.- Suma")
-                Console.WriteLine("2.- Recta")
-                Console.WriteLine("3.- Multiplicición")
-                Console.WriteLine("4.- División")
-                Console.WriteLine("5.- Funcion")
-                Console.WriteLine("6.- Salir del programa")
+            Console.Write("Por favor elija seleccione la operacion a realizar:")
+            Console.WriteLine("")
+            Console.WriteLine("1.- Suma")
+            Console.WriteLine("2.- Recta")
+            Console.WriteLine("3.- Multiplicición")
+            Console.WriteLine("4.- División")
+            Console.WriteLine("5.- Funcion")
+            Console.WriteLine("6.- Salir del programa")
 
-                Select Case validarNumero()
+            Select Case validarNumero()
 
-                    Case 1
-                        introducirNumeros()
-                        ope = CInt(numUno + numDos)
-                        menuOperaciones()
+                Case 1
+                    introducirNumeros()
+                    ope = CInt(numUno + numDos)
+                    menuOperaciones()
 
-                    Case 2
-                        introducirNumeros()
-                        ope = CInt(numUno - numDos)
-                        menuOperaciones()
+                Case 2
+                    introducirNumeros()
+                    ope = CInt(numUno - numDos)
+                    menuOperaciones()
 
-                    Case 3
-                        introducirNumeros()
-                        ope = CInt(numDos / numUno)
-                        menuOperaciones()
+                Case 3
+                    introducirNumeros()
+                    ope = CInt(numDos / numUno)
+                    menuOperaciones()
 
-                    Case 4
-                        introducirNumeros()
-                        ope = CInt(numUno * numDos)
-                        menuOperaciones()
+                Case 4
+                    introducirNumeros()
+                    ope = CInt(numUno * numDos)
+                    menuOperaciones()
 
-                    Case 5
-                        introducirNumeros()
-                        menuOperaciones()
-                    Case 6
-                        Console.Write("Fin del programa")
-                End Select
-
-
-            Loop While numero < 6
+                Case 5
+                    introducirNumeros()
+                    menuOperaciones()
+                Case 6
+                    Console.Write("Fin del programa")
+            End Select
 
 
-        End Sub
+        Loop While numero < 6
+
+
+    End Sub
 
         Public Sub menuOperaciones()
 
